@@ -396,7 +396,8 @@ main.content {
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 0 0;
+    font-family: Inconsolata, monospace, "Courier New"
     font-size: 5rem;
     letter-spacing: -1px;
 }
@@ -411,6 +412,16 @@ main.content {
 
 .blog-nav-item {
     margin: 0;
+}
+
+.blog-nav-item a {
+    color: #33c;
+}
+
+h1.blog-title, h2.blog-description, h3.blog-nav-item {
+    background-color: #000;
+    opacity: 0.9;
+    padding: 5px 0;
 }
 
 .header-link {
