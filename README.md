@@ -13,7 +13,10 @@ Make sure you de-comment the Google Analytics section and change Disqus keys bef
 
 - Change the dark background of blog title (if it's acceptable on PC, it really sucks on mobile phones)
 
-- Find a way to add related posts (or, at least, re-enable the previous/next links, as in the original Casper theme)
+- Find a way to add related posts (or, at least, add the previous/next links, as in the Casper theme)
 
 - Add a search box (the position has TBD)
+
+- Add social buttons under the title
+
 
