@@ -347,11 +347,12 @@ table.plain {
 }
 
 /* Centres vertically yo. (IE8+) */
+/*
 .vertical {
     display: table-cell;
     vertical-align: middle;
 }
-
+*/
 
 /* ==========================================================================
    4. General - The main styles for the the theme
@@ -421,7 +422,6 @@ main.content {
 h1.blog-title, h2.blog-description, h3.blog-nav-item {
     background-color: #000;
     opacity: 0.9;
-    padding: 5px 0;
 }
 
 .header-link {
@@ -866,7 +866,7 @@ h1.blog-title, h2.blog-description, h3.blog-nav-item {
         box-sizing: border-box;
         height: auto;
         min-height: 240px;
-        padding: 15% 0;
+        padding: 0 0 30%;
 		width: 100%;
 		position: initial;
 		min-width: inherit;
@@ -945,7 +945,7 @@ h1.blog-title, h2.blog-description, h3.blog-nav-item {
     }
 
     #site-head {
-        padding: 10% 0;
+        padding: 0 0 20%;
     }
 
     .blog-title {
