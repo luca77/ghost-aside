@@ -595,6 +595,14 @@ h1.blog-title, h2.blog-description, h3.blog-nav-item {
     margin: 0 auto;
 }
 
+.post-content a {
+    color: #44c;
+}
+
+.post-content a:visited {
+    color: #84c;
+}
+
 /* The author credit area after the post */
 .post-footer {
     position: relative;
