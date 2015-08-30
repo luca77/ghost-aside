@@ -603,6 +603,10 @@ h1.blog-title, h2.blog-description, h3.blog-nav-item {
     color: #84c;
 }
 
+.post-content blockquote {
+    background-color: #fff8bb;
+}
+
 /* The author credit area after the post */
 .post-footer {
     position: relative;
