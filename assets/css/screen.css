@@ -503,11 +503,11 @@ h1.blog-title, h2.blog-description, h3.blog-nav-item {
     margin: 0 0 5px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-    color: #9EABB3;
+    color: #666;
 }
 
 .post-meta a {
-    color: #9EABB3;
+    color: #66C;
     text-decoration: none;
 }
 
@@ -866,12 +866,12 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #666;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #66C;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -917,18 +917,18 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     line-height: 1.7em;
-    color: #BBC7CC;
+    color: #666;
     text-align: center;
     background: #F7FAFB;
 }
 
 .site-footer a {
-    color: #BBC7CC;
+    color: #66C;
     text-decoration: underline;
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: #66C;
 }
 
 .poweredby .icon-ghost {
