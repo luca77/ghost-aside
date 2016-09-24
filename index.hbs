@@ -35,8 +35,21 @@
 	<footer class="site-footer">
         <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
         <div class="inner">
-             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+            <section class="copyright">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+		</a><br />
+                <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
+                    {{@blog.title}}
+                </span>
+		by <a xmlns:cc="http://creativecommons.org/ns#" href="http://while2.ghost.io/about" property="cc:attributionName" rel="cc:attributionURL">
+                    Luca Sommacal
+                </a><br />
+		is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                    Creative Commons Attribution-NonCommercial 4.0 International License
+                </a>.
+            </section>
+            <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
         </div>
     </footer>
 
