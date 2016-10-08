@@ -337,6 +337,18 @@ table.plain {
 }
 
 
+.flatbtn {
+	background-color: #66F;
+	border-radius: 5px;
+	color: #FFF !important;
+	display: block;
+	margin: 2em;
+	padding: 10px 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
 /* ==========================================================================
    3. Utilities - These things get used a lot
    ========================================================================== */
