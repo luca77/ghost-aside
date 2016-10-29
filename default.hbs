@@ -83,6 +83,12 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
+    <script type="text/javascript">
+        if (typeof jQuery == 'undefined') {
+            document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></'+'script>');
+        }
+    </script>
+
     {{! The main JavaScript file for Aside }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
