@@ -8,6 +8,11 @@
 {{! The main content area on the homepage }}
 <main class="content" role="main">
 	<nav class="pagination">Posts tagged <i>{{tag.name}}</i>. <a href="/">View all</a></nav>
+
+    {{#is "paged"}}
+        {{pagination}}
+    {{/is}}
+
     {{! Each post will be output using this markup }}
 	{{#foreach posts}}
     <article class="{{post_class}}">
