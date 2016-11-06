@@ -12,7 +12,7 @@ Make sure you de-comment the Google Analytics section and change Disqus keys bef
 
 ## Roadmap / Future Developments
 
-- Add specific cover image also on tag pages
+- ~~Add specific cover image also on tag pages~~
 
 - Add related posts
 
