@@ -8,16 +8,37 @@
 {{! The main content area on the homepage }}
 <main class="content" role="main">
     <article class="{{post_class}}">
-        <h1 class="post-title">404 - Unexpected Error</h1>
+        <h1 class="post-title">404 - Don't Panic</h1>
 
         <section class="post-content" id="jetzt-container">
             It seems that the page you are looking for is not here. <strong>Maybe someone stole it.</strong>
-            Just to be sure, please check the URL in the address bar, otherwise...
-
-            <a class="flatbtn" href="/">start browsing from the index</a>
+	    Just to be sure, please check the URL in the address bar, otherwise you can take a look at my <strong>recent
+            posts</strong> below.
         </section>
-
     </article>
+
+    {{#get "posts" limit="3" as |recents|}}
+    <section class="recent-posts">
+        {{#foreach recents}}
+        <article class="{{post_class}}">
+            <header class="post-header">
+                <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+                    {{#if tags}}on {{tags}}{{/if}} | <a href="{{url}}#disqus_thread">Comments<a>
+                </span>
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            </header>
+            {{#if image}}
+            <div class="post-thumbnail">
+	        <a href="{{url}}"><img src="{{image}}" /></a>
+	    </div>
+            {{/if}}
+            <section class="post-excerpt">
+                <p>{{excerpt characters=250}}&hellip; <em><a href="{{url}}" style="text-decoration: none; color: #66F;">(read more)</a></em></p>
+            </section>
+        </article>
+        {{/foreach}}
+    </section>
+    {{/get}}
 
 	<footer class="site-footer">
         <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
