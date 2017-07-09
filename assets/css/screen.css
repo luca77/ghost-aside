@@ -143,11 +143,13 @@ h6 {
 
 a {
     color: #4a4a4a;
+    text-decoration: none;
     transition: color ease 0.3s;
 }
 
 a:hover {
     color: #57A3E8;
+    text-decoration: none;
 }
 
 h1 a, h2 a, h3 a,
@@ -538,10 +540,6 @@ main.content {
 .post-meta a {
     color: #66C;
     text-decoration: none;
-}
-
-.post-meta a:hover {
-    text-decoration: underline;
 }
 
 .footnotes {
@@ -957,7 +955,6 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .site-footer a {
     color: #66C;
-    text-decoration: underline;
 }
 
 .site-footer a:hover {
