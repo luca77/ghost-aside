@@ -896,19 +896,23 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 }
 
 .pagination a {
-    color: #66C;
+    color: #fff;
+    word-spacing: 0.3em;
 }
 
 /* Push the previous/next links out to the left/right */
 .older-posts,
 .newer-posts {
+    background-color: #55f;
+    font-weight: bold;
     position: absolute;
     display: inline-block;
-    padding: 0 15px;
-    border: #ccc 1px solid;
+    padding: 2px 15px;
     text-decoration: none;
-    border-radius: 30px;
-    transition: border ease 0.3s;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color linear 0.5s;
+    transition: box-shadow linear 0.5s;
 }
 
 .older-posts {
@@ -926,7 +930,8 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .older-posts:hover,
 .newer-posts:hover {
-    border-color: #9EABB3;
+    background-color: #44f;
+    box-shadow: 0 3px 5px 0px #888;
 }
 
 
