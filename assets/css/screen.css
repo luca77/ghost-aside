@@ -416,9 +416,8 @@ main.content {
 
 /* Div that contains the title and the links */
 .vertical {
-    background-color: #002;
+    background: linear-gradient(rgba(0, 0, 34, 0.5), rgba(0, 0, 34, 1.0));
     color: #fff;
-    opacity: 0.8;
     padding: 0 0 .2em;
     text-align: center;
     width: 100%;
@@ -436,19 +435,24 @@ main.content {
     margin: 0;
     font-size: 1.8rem;
     line-height: 1.0em;
-    font-weight: 300;
+    font-weight: normal;
     letter-spacing: 0;
+    margin-bottom: .3em;
 }
 
 .blog-nav-item {
     display: inline;
     font-size: 1.8rem;
-    font-weight: 300;
-    margin: 0 .5em;
+    font-weight: normal;
+    padding: 0 .5em;
 }
 
 .blog-nav-item a {
-    color: #66F;
+    color: #88F;
+}
+
+.blog-nav-item a:hover {
+    color: #88F;
 }
 
 .header-link {
