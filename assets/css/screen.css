@@ -143,11 +143,13 @@ h6 {
 
 a {
     color: #4a4a4a;
+    text-decoration: none;
     transition: color ease 0.3s;
 }
 
 a:hover {
     color: #57A3E8;
+    text-decoration: none;
 }
 
 h1 a, h2 a, h3 a,
@@ -335,18 +337,6 @@ table.plain {
 }
 
 
-.flatbtn {
-	background-color: #66F;
-	border-radius: 5px;
-	color: #FFF !important;
-	display: block;
-	margin: 2em;
-	padding: 10px 5px;
-	text-align: center;
-	text-decoration: none;
-}
-
-
 /* ==========================================================================
    3. Utilities - These things get used a lot
    ========================================================================== */
@@ -416,9 +406,8 @@ main.content {
 
 /* Div that contains the title and the links */
 .vertical {
-    background-color: #002;
+    background: linear-gradient(rgba(0, 0, 34, 0.5), rgba(0, 0, 34, 1.0));
     color: #fff;
-    opacity: 0.8;
     padding: 0 0 .2em;
     text-align: center;
     width: 100%;
@@ -436,19 +425,24 @@ main.content {
     margin: 0;
     font-size: 1.8rem;
     line-height: 1.0em;
-    font-weight: 300;
+    font-weight: normal;
     letter-spacing: 0;
+    margin-bottom: .3em;
 }
 
 .blog-nav-item {
     display: inline;
     font-size: 1.8rem;
-    font-weight: 300;
-    margin: 0 .5em;
+    font-weight: normal;
+    padding: 0 .5em;
 }
 
 .blog-nav-item a {
-    color: #66F;
+    color: #88F;
+}
+
+.blog-nav-item a:hover {
+    color: #88F;
 }
 
 .header-link {
@@ -534,10 +528,6 @@ main.content {
 .post-meta a {
     color: #66C;
     text-decoration: none;
-}
-
-.post-meta a:hover {
-    text-decoration: underline;
 }
 
 .footnotes {
@@ -896,19 +886,23 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 }
 
 .pagination a {
-    color: #66C;
+    color: #fff;
+    word-spacing: 0.3em;
 }
 
 /* Push the previous/next links out to the left/right */
 .older-posts,
 .newer-posts {
+    background-color: #55f;
+    font-weight: bold;
     position: absolute;
     display: inline-block;
-    padding: 0 15px;
-    border: #ccc 1px solid;
+    padding: 2px 15px;
     text-decoration: none;
-    border-radius: 30px;
-    transition: border ease 0.3s;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color linear 0.5s;
+    transition: box-shadow linear 0.5s;
 }
 
 .older-posts {
@@ -926,7 +920,8 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .older-posts:hover,
 .newer-posts:hover {
-    border-color: #9EABB3;
+    background-color: #44f;
+    box-shadow: 0 3px 5px 0px #888;
 }
 
 
@@ -948,7 +943,6 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .site-footer a {
     color: #66C;
-    text-decoration: underline;
 }
 
 .site-footer a:hover {
@@ -971,26 +965,25 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 /* The subscribe icon on the footer */
 .subscribe {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     position: absolute;
-    top: -14px;
+    top: -16px;
     left: 50%;
-    margin-left: -15px;
+    margin-left: -16px;
     border: #ccc 1px solid;
     text-align: center;
-    line-height: 2.4rem;
-    border-radius: 50px;
+    border-radius: 32px;
     background: #fff;
     transition: box-shadow 0.5s;
 }
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
-    color: #ccc;
-    font-size: 10px;
+    color: #888;
+    font-size: 15px;
     position: absolute;
-    top: 2px;
+    top: 7px;
     left: 9px;
     font-weight: bold;
     transition: color 0.5s ease;
@@ -1003,7 +996,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 }
 
 .subscribe:hover:before {
-    color: #50585D;
+    color: #44F;
 }
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
